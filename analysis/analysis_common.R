@@ -87,7 +87,7 @@ convert_longtable_file <- function(path){
   text <- gsub("\\\\setlength\\{\\\\LTpost\\}\\{0mm\\}", "", text)
   
   # eliminate this line as well
-  text <- gsub("\\\\fontsize\\{12.0pt\\}\\{14.4pt\\}\\\\selectfont", "", text)
+  text <- gsub("\\\\fontsize\\{12\\.0pt\\}\\{14\\.[0-9]+pt\\}\\\\selectfont", "", text)
   
   # Convert \begin{longtable} to \begin{tabular}
   text <- gsub("\\\\begin\\{longtable\\}", "\\\\begin\\{tabular\\}", text)
