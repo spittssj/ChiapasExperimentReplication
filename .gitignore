@@ -1,0 +1,20 @@
+# macOS / editor junk
+.DS_Store
+
+# R session artifacts
+.Rhistory
+.RData
+.Rapp.history
+.Ruserdata
+
+# RStudio project cache
+.Rproj.user/
+
+# The Rproj file is excluded to keep the repo editor-agnostic
+*.Rproj
+
+# GitHub provides its own Download ZIP
+ms2024035_replication.zip
+
+# Claude Code local guidance (not part of the replication package)
+CLAUDE.md
